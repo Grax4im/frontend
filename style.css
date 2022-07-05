@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display:grid;
+    place-items: center;
+}
+form{
+    min-width: 60%;
+}
+h1{
+    padding: 10vh;
+}
+table{
+    text-align: center;
+}
+li {
+    font-size: 2vw;
+}

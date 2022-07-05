@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>All Tricks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<section>
+		<h1>Juggling Lab</h1>
+		<section>
+			<ul>
+				<li><a href="#" id="login">Login</a></li>
+				<div class="d-none login">				
+					<form>
+						<div class="mb-3">
+						<label for="name" class="form-label">Nome</label>
+						<input type="name" class="form-control" id="name">
+						</div>
+						<div class="mb-3">
+						<label for="password" class="form-label">Password</label>
+						<input type="password" class="form-control" id="password">
+						</div>
+						<button type="button" class="btn btn-primary" id="submit">Enviar</button>
+					</form>
+				</div>
+				<li><a href="#" id="getAll">Show all tricks</a></li>
+				<div class="mt-3 d-none showAll">
+					<table class="table allTable">
+					</table>
+				</div>
+				<li><a href="#" id="difficult">Filter by Difficult</a></li>
+					<div class="d-none difficult">
+						<form>
+							<input type="number" class="form-control" name="difficult" min="1" max="7" placeholder="Difficult" id="difficultField">
+						</form>
+						<table class="table difficultTable">
+						</table>
+					</div>
+				<li><a href="#" id="balls">Filter by Nº of Balls</a></li>
+					<div class="d-none balls">
+						<form>
+							<input type="number" class="form-control" name="difficult" min="3" max="7" placeholder="Balls" id="ballsField">
+						</form>
+						<table class="table ballsTable">
+						</table>
+					</div>
+			</ul>
+		</section>
+	</section>
+  <script src="https://unpkg.com/axios/dist/axios.min.js" ></script>
+  <script src="code.js"></script>
+</body>
+</html>
