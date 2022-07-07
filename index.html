@@ -13,9 +13,9 @@
 		<h1>Juggling Lab</h1>
 		<section>
 			<ul>
-				<li><a href="#" id="login">Login</a></li>
-				<div class="d-none login">				
-					<form>
+				<div class="login">	
+					<li><a href="#" id="login">Login</a></li>		
+					<form class="d-none">
 						<div class="mb-3">
 						<label for="name" class="form-label">Nome</label>
 						<input type="name" class="form-control" id="name">
@@ -35,7 +35,7 @@
 				<li><a href="#" id="difficult">Filter by Difficult</a></li>
 					<div class="d-none difficult">
 						<form>
-							<input type="number" class="form-control" name="difficult" min="1" max="7" placeholder="Difficult" id="difficultField">
+							<input type="number" class="form-control" name="difficult" min="2" max="9" placeholder="Difficult" id="difficultField">
 						</form>
 						<table class="table difficultTable">
 						</table>
@@ -48,6 +48,19 @@
 						<table class="table ballsTable">
 						</table>
 					</div>
+				<div class="addTrick d-none">
+					<li><a href="#" id="addTrick">Add Trick</a></li>
+					<div class="d-none newTricks">
+					<form>
+						<input type="name" class="form-control" placeholder="Name" id="newNameField">
+						<input type="number" class="form-control" placeholder="N of balls" id="newBallsField" min="3" max="6">
+						<input type="number" class="form-control" placeholder="Difficult" id="newDifficultField" min="2" max="9">
+						<input type="name" class="form-control" placeholder="Siteswap" id="newSiteswapField">
+						<input type="name" class="form-control" placeholder="Pre requisites" id="newPrerequisitesField">
+						<button type="button" class="btn btn-primary" onclick="addTrick()" id="enviarAdd">ENVIAR</button>
+					</form>
+					</div>
+				</div>
 			</ul>
 		</section>
 	</section>
